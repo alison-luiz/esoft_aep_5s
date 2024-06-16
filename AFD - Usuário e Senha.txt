@@ -1,0 +1,3 @@
+// Regras
+// usuario: deve ser composto por no máximo 10 caracter. (Não pode ter números, nem letras maíusculas)
+// senha: mínimo 8 caracter - sendo no mínimo um especial (@#$%¨&) e um número (0123456789)
