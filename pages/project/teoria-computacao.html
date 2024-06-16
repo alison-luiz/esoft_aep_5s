@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+
+    <link rel="stylesheet" href="../../assets/css/project.css" />
+    <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="sidebar"></div>
+      <main class="content">
+        <header class="header">
+          <h2>Documentos de Desenvolvimento da AEP</h2>
+        </header>
+        <section class="teoria-computacao">
+          <h3>Teoria da Computação</h3>
+          <h4>Regras para Usuário:</h4>
+          <p>
+            O usuário deve ser composto por no máximo 10 caracteres. Não pode
+            conter números nem letras maiúsculas.
+          </p>
+
+          <h4>Regras para Senha:</h4>
+          <p>
+            A senha deve ter no mínimo 8 caracteres, incluindo pelo menos um
+            caractere especial (@#$%¨&) e um número (0123456789).
+          </p>
+
+          <h4>Autômato Finito Determinístico (AFD) para Usuário:</h4>
+          <ul class="afd">
+            <li>
+              Conjunto de Estados: Q = { Q0, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9
+              }
+            </li>
+            <li>Alfabeto: Σ = { a, b, c, ..., z }</li>
+            <li>
+              Função de Transição:
+              <ul>
+                <li>Δ(q0, u) = q1</li>
+                <li>Δ(q1, s) = q2</li>
+                <li>Δ(q2, u) = q3</li>
+                <li>Δ(q3, a) = q4</li>
+                <li>Δ(q4, r) = q5</li>
+                <li>Δ(q5, i) = q6</li>
+                <li>Δ(q6, o) = q7</li>
+                <li>Δ(q7, s) = q8</li>
+              </ul>
+            </li>
+            <li>Estado Inicial: Q0</li>
+            <li>Estado Final: Q8</li>
+          </ul>
+
+          <h4>Autômato Finito Determinístico (AFD) para Senha:</h4>
+          <ul class="afd">
+            <li>
+              Conjunto de Estados: Q = { Q0, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9
+              }
+            </li>
+            <li>
+              Alfabeto: Σ = { a, b, c, ..., z, 0, 1, 2, ..., 9, !, @, #, $, & }
+            </li>
+            <li>
+              Função de Transição:
+              <ul>
+                <li>Δ(q0, u) = q1</li>
+                <li>Δ(q1, s) = q2</li>
+                <li>Δ(q2, u) = q3</li>
+                <li>Δ(q3, @) = q4</li>
+                <li>Δ(q4, r) = q5</li>
+                <li>Δ(q5, i) = q6</li>
+                <li>Δ(q6, o) = q7</li>
+                <li>Δ(q7, s) = q8</li>
+                <li>Δ(q8, 1) = q9</li>
+                <li>Δ(q9, 2) = q10</li>
+                <li>Δ(q10, 3) = q11</li>
+              </ul>
+            </li>
+            <li>Estado Inicial: Q0</li>
+            <li>Estado Final: Q11</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/authUser.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 200px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.lessons,
+.materials {
+  margin-top: 20px;
+}
+
+.lessons-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lessons-table th,
+.lessons-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.lessons-table th {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.lessons-table td {
+  background-color: #fff;
+}
+
+.lessons-table .lesson-status {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.lessons-table .lesson-concluded {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.lessons-table .lesson-pending {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.lessons-table a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.lessons-table a:hover {
+  background-color: #e2e6ea;
+}
+
+.materials ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.materials li {
+  margin-bottom: 10px;
+}
+
+.materials a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 10px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.materials a:hover {
+  background-color: #e2e6ea;
+}
+
+.btn-show-video {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Cadastro</title>
+
+    <link rel="stylesheet" href="../../assets/css/profile.css" />
+    <link rel="stylesheet" href="../../assets/css/sidebar.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="sidebar"></div>
+      <main class="content">
+        <h2>Editar Perfil</h2>
+        <form id="profile-form">
+          <label for="profile-firstname">Nome:</label>
+          <input type="text" id="profile-firstname" required />
+
+          <label for="profile-lastname">Sobrenome:</label>
+          <input type="text" id="profile-lastname" required />
+
+          <label for="profile-email">Email:</label>
+          <input type="email" id="profile-email" required />
+
+          <label for="profile-cpf">CPF:</label>
+          <input type="text" id="profile-cpf" required />
+
+          <label for="profile-dob">Data de Nascimento:</label>
+          <input type="date" id="profile-dob" required />
+
+          <label for="profile-username">Usuário:</label>
+          <input type="text" id="profile-username" required disabled />
+
+          <label for="profile-password">Nova Senha:</label>
+          <input type="password" id="profile-password" />
+
+          <button type="submit">Salvar</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="../../assets/js/profile.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/authUser.js"></script>
+  </body>
+</html>

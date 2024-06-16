@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.curriculum__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+}
+
+.curriculum__header__item {
+  display: flex;
+  align-items: center;
+}
+
+.curriculum__body {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.curriculum__body__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.curriculum__body__item__name {
+  font-weight: bold;
+}
+
+.curriculum__body__item__status {
+  color: #007bff;
+}

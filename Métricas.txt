@@ -58,7 +58,7 @@ Justificativa da Solução Proposta:
 Inclusão e Personalização:
 
 Acessibilidade: Nossa plataforma será totalmente conforme às normas WCAG(Diretrizes Para o Conteúdo de Acessibilidade Web), visando superar as limitações observadas em plataformas como Coursera e Udemy.
-Personalização de Ensino: Utilizaremos tecnologias avançadas de IA para adaptar os conteúdos ao nível de cada aluno, proporcionando uma experiência de aprendizado mais eficaz e personalizada.
+
 
 Segurança e Privacidade:
 

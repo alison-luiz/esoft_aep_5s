@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.header h2 {
+  margin: 0;
+  color: #495057;
+}
+
+.metricas {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.metrica {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 20px;
+}
+
+.metrica h4 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.metrica p {
+  margin-bottom: 10px;
+}
+
+.teoria-computacao {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.teoria-computacao h3 {
+  margin-top: 0;
+  color: #495057;
+}
+
+.teoria-computacao h4 {
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.teoria-computacao p {
+  margin-bottom: 10px;
+}
+
+.afd {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.afd ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
